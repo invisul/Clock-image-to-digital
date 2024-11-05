@@ -12,8 +12,14 @@ Input Format: "HH:MM" (24-hour format).
 Logic:
 Each hour corresponds to 30 degrees on the clock (since a full 360 degrees are divided by 12 hours).
 Each minute corresponds to 6 degrees (since 360 degrees divided by 60 minutes equals 6).
+
 Usage Example: python clock_tool.py --draw_time "14:30"
 This will generate an analog clock showing 2:30 PM.
+
+Here is an example of draw_time usage and result 
+![image](https://github.com/user-attachments/assets/b91eb209-1393-405c-a625-8d28327d202e)
+
+![image](https://github.com/user-attachments/assets/0d0c26e0-82ce-4c4c-86cf-2df598a31240)
 
 
 
@@ -26,6 +32,11 @@ File Naming:
 Each generated image is saved with a filename pattern: clock_{current_time}.png, where {current_time} is the timestamp of image creation.
 Usage Example: python clock_tool.py --create_clock_images 5
 This will generate 5 clock images with random times.
+
+Here is an example of a clock image generated using 
+![image](https://github.com/user-attachments/assets/e5c9ed1b-35f3-4cf5-911c-cd679ba19b37)
+
+![clock_1730744361 855784](https://github.com/user-attachments/assets/5ffac6f2-1347-46a8-8cdd-fe8037d8b372)
 
 
 
@@ -45,6 +56,10 @@ Once both hands are identified, calculate the time based on their angles.
 Usage Example: python clock_tool.py --translate_to_digital path/to/clock_image.png
 
 
+Picture example of translate_to_digital
+![image](https://github.com/user-attachments/assets/6e2bf4e5-367d-4231-b88f-bb7126526d56)
+
+
 
 5. --debug
 Description: Activates debug mode to show intermediary results during processing.
@@ -57,3 +72,6 @@ Usage Example:
 python clock_tool.py --translate_to_digital path/to/clock_image.png --debug
 
 This will show intermediary steps as the analog time is converted to digital.
+
+
+
