@@ -233,7 +233,7 @@ def find_minutes_time(image):
                 cv2.waitKey(0)
                 cv2.destroyAllWindows()
             return x0, y0, image
-    return -1, -1
+    return -1, -1, image
 
 # same logic as the function above but for hours.
 # there is code duplication here. need to combine to 1 function to save logic.
