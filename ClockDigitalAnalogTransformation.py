@@ -299,7 +299,7 @@ def translate_to_digital(file):
 def main():
     global debug
     parser = argparse.ArgumentParser(description="Draw a clock at a specified time.")
-    parser.add_argument("--draw_time", type=str, required=False, help="Time in the format 'HH:MM:SS' or 'HH:MM:SS'.")
+    parser.add_argument("--draw_time", type=str, required=False, help="Time in the format 'HH:MM' .")
     parser.add_argument("--create_clock_images", type=int, required=False, help="number of random clock images to generate")
     parser.add_argument("--translate_to_digital", type=str, required=False, help="picture of a clock to translate to digital")
     parser.add_argument("--debug", type=bool, required=False, help="debug mode to have prints mid-way")
