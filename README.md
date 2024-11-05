@@ -13,7 +13,7 @@ Logic:
 Each hour corresponds to 30 degrees on the clock (since a full 360 degrees are divided by 12 hours).
 Each minute corresponds to 6 degrees (since 360 degrees divided by 60 minutes equals 6).
 
-Usage Example: python clock_tool.py --draw_time "14:30"
+Usage Example: python ClockDigitalAnalogTransformation.py --draw_time "14:30"
 This will generate an analog clock showing 2:30 PM.
 
 Here is an example of draw_time usage and result 
@@ -30,7 +30,7 @@ Input: The number of images to create.
 
 File Naming:
 Each generated image is saved with a filename pattern: clock_{current_time}.png, where {current_time} is the timestamp of image creation.
-Usage Example: python clock_tool.py --create_clock_images 5
+Usage Example: python ClockDigitalAnalogTransformation.py --create_clock_images 5
 This will generate 5 clock images with random times.
 
 Here is an example of a clock image generated using 
@@ -40,7 +40,7 @@ Here is an example of a clock image generated using
 
 
 
-4. --translate_to_digital
+3. --translate_to_digital
 Description: Reads an analog clock image, identifies the hour and minute hands, and translates it to digital time.
 
 Input: Path to the analog clock image.
@@ -53,7 +53,7 @@ Remove the Minute Hand: Remove the minute hand from the image to simplify detect
 Identify the Hour Hand:
 Detect the hour hand by repeating the angle analysis process.
 Once both hands are identified, calculate the time based on their angles.
-Usage Example: python clock_tool.py --translate_to_digital path/to/clock_image.png
+Usage Example: python ClockDigitalAnalogTransformation.py --translate_to_digital path/to/clock_image.png
 
 
 Picture example of translate_to_digital
@@ -61,7 +61,7 @@ Picture example of translate_to_digital
 
 
 
-5. --debug
+4. --debug
 Description: Activates debug mode to show intermediary results during processing.
 Functionality:
 This option displays updates as each step completes:
@@ -69,7 +69,7 @@ After the circle (clock face) is detected, it changes color.
 After the minute hand is found, it is removed from the image.
 After the hour hand is found, a black line is drawn over it.
 Usage Example:
-python clock_tool.py --translate_to_digital path/to/clock_image.png --debug
+python ClockDigitalAnalogTransformation.py --translate_to_digital path/to/clock_image.png --debug
 
 This will show intermediary steps as the analog time is converted to digital.
 
