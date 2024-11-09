@@ -92,3 +92,15 @@ Lines found using OpenCV algoirthm
 <img width="810" alt="image" src="https://github.com/user-attachments/assets/7225222d-5f3b-4b65-ac7f-7f925b6468a6">
 
 
+Clock Images from the internet example
+<img width="786" alt="image" src="https://github.com/user-attachments/assets/f2686d2b-224d-42b5-b3e5-0799a65fa6aa">
+<img width="604" alt="image" src="https://github.com/user-attachments/assets/e8db847e-d34e-4840-bd0a-bf24cb5ad783">
+
+<img width="844" alt="image" src="https://github.com/user-attachments/assets/2d431362-0d04-4030-b10d-d770c9242269">
+
+
+<img width="608" alt="image" src="https://github.com/user-attachments/assets/1c1c3645-7acc-463e-955e-f2c09e4387f3">
+
+
+
+
