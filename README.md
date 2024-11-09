@@ -1,25 +1,32 @@
+Needed Libararies are:
+opencv-python
+pygame
+numpy
+
 Clock Image Generator and Analyzer - README
 This tool provides various functionalities for generating analog clock images, drawing specific times, and translating analog clock images to digital time. Below are explanations for each command-line argument:
 
 This code require OpenCV and pygame to run, please run the makefile provided or install the packages yourself
 
 Arguments
+0. --time  Input Format: "HH:MM" (24-hour format).
+
+
 1. --draw_time
 Description: Draws an analog clock with the specified time.
 
-Input Format: "HH:MM" (24-hour format).
+
 
 Logic:
 Each hour corresponds to 30 degrees on the clock (since a full 360 degrees are divided by 12 hours).
 Each minute corresponds to 6 degrees (since 360 degrees divided by 60 minutes equals 6).
 
-Usage Example: python ClockDigitalAnalogTransformation.py --draw_time "14:30"
+Usage Example: python ClockDigitalAnalogTransformation.py --draw_time --time "14:30"
 This will generate an analog clock showing 2:30 PM.
 
 Here is an example of draw_time usage and result 
-![image](https://github.com/user-attachments/assets/b91eb209-1393-405c-a625-8d28327d202e)
+<img width="1600" alt="image" src="https://github.com/user-attachments/assets/47d01032-3ff3-452e-ad60-60da92a285f3">
 
-![image](https://github.com/user-attachments/assets/0d0c26e0-82ce-4c4c-86cf-2df598a31240)
 
 
 
@@ -29,14 +36,15 @@ Description: Creates a specified number of images with random times displayed on
 Input: The number of images to create.
 
 File Naming:
-Each generated image is saved with a filename pattern: clock_{current_time}.png, where {current_time} is the timestamp of image creation.
-Usage Example: python ClockDigitalAnalogTransformation.py --create_clock_images 5
-This will generate 5 clock images with random times.
+Usage Example: python ClockDigitalAnalogTransformation.py --create_clock_images --time "12:30" --output "path_to_save.png"
+
+or python ClockDigitalAnalogTransformation.py --create_clock_images will create a random image.
+generated image is saved with a filename pattern:  clock_{current_time}.png, where {current_time} is the timestamp of image creation.
 
 Here is an example of a clock image generated using 
-![image](https://github.com/user-attachments/assets/e5c9ed1b-35f3-4cf5-911c-cd679ba19b37)
+<img width="1494" alt="image" src="https://github.com/user-attachments/assets/622cb8d9-8520-45bc-90de-fe2a6f4c3e31">
+<img width="991" alt="image" src="https://github.com/user-attachments/assets/be1f199e-93e6-4935-9b39-6badc8f28d5a">
 
-![clock_1730744361 855784](https://github.com/user-attachments/assets/5ffac6f2-1347-46a8-8cdd-fe8037d8b372)
 
 
 
@@ -73,5 +81,14 @@ python ClockDigitalAnalogTransformation.py --translate_to_digital path/to/clock_
 
 This will show intermediary steps as the analog time is converted to digital.
 
+
+Examples of debug prints:
+
+Circle found 
+<img width="995" alt="image" src="https://github.com/user-attachments/assets/73af369e-0ee7-4c62-94f7-ce773ed3f66d">
+
+
+Lines found using OpenCV algoirthm
+<img width="995" alt="image" src="https://github.com/user-attachments/assets/0dc443ca-7f64-4684-81d0-d1ba06034a40">
 
 
