@@ -69,7 +69,10 @@ class ClockDisplay:
         # Generate a unique filename with the current date and time
         timestamp = time.time()
         if filename and not exists(filename):
-            makedirs(dirname(filename), exist_ok=True)
+            directory_name = dirname(filename)
+            if directory_name == "":
+                filename = join(getcwd(), filename)
+            makedirs(directory_name, exist_ok=True)
         if filename is None:
             filename = f"clock_{timestamp}.png"
             print(f"no file name is provided, using current directory as the path and name of the file will be {filename}")
