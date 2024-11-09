@@ -89,6 +89,6 @@ Circle found
 
 
 Lines found using OpenCV algoirthm
-<img width="995" alt="image" src="https://github.com/user-attachments/assets/0dc443ca-7f64-4684-81d0-d1ba06034a40">
+<img width="810" alt="image" src="https://github.com/user-attachments/assets/7225222d-5f3b-4b65-ac7f-7f925b6468a6">
 
 
