@@ -142,7 +142,7 @@ def main():
     if args.draw_time and args.time:
         draw_clock_based_on_digital_time_input(args.time)
     if args.create_clock_images:
-        filename = generate_clock_image(args.time, args.output, args.debug)
+        filename = generate_clock_image(args.time, args.output)
         translate_to_digital(filename)
     if args.translate_to_digital:
         translate_to_digital(args.translate_to_digital, args.debug)
