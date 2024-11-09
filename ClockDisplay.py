@@ -71,7 +71,7 @@ class ClockDisplay:
         if filename and not exists(filename):
             directory_name = dirname(filename)
             if directory_name == "":
-                filename = join(getcwd(), filename)
+                directory_name = getcwd()
             makedirs(directory_name, exist_ok=True)
         if filename is None:
             filename = f"clock_{timestamp}.png"
