@@ -18,11 +18,13 @@ install: $(VENV_DIR) $(REQ_FILE)
 $(REQ_FILE):
 	@echo "opencv-python" > $(REQ_FILE)
 	@echo "pygame" >> $(REQ_FILE)
+	@echo "numpy" >> $(REQ_FILE)
 
 # Target to check if the installation was successful
 check:
 	$(VENV_DIR)/bin/python -c "import cv2; print('OpenCV installed successfully')"
 	$(VENV_DIR)/bin/python -c "import pygame; print('Pygame installed successfully')"
+	$(VENV_DIR)/bin/python -c "import numpy; print('numpy installed successfully')"
 
 # Clean up virtual environment and requirements file
 clean:
